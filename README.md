@@ -9,3 +9,5 @@ Una tienda es famosa por los sandwiches que vende. Tiene 3 tipos de sandwich: Ja
 Así, lo que se desea es un sistema que informe sobre el pedido total del usuario y el valor total de este.
 
 # Clasificación de patrones vistos
+Los patrones de diseño vistos en clase fueron: Factory, Singleton y Decorator.
+Factory y Singleton pertenecen a la categoría de <b>patrones creacionales</b>, mientras que Decorator pertenece a la categoría de <b>patrones estructorales</b>.

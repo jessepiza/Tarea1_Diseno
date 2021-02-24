@@ -1,11 +1,19 @@
 def admixture(function):
-    def wrapper(sandwich, additions):
+    """
+    Decorator
+    """
+    def wrapper(sandwich, additions=''):
+        """
+        :param sandwich: Sandwich al cual se le van a agregar las adiciones.
+        :param additions: Adiciones a agregar.
+        :return: El valor total de la compra y la factura completa con lo comprado.
+        """
         total = 0
         if isinstance(additions, list):
             for addition in additions:
                 total += sandwich.get_cost() + function(addition)
         else:
-            if (additions == ''):
+            if additions == '':
                 additions = 'Ninguna'
                 total += sandwich.get_cost()
             else:
